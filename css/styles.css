@@ -119,10 +119,12 @@ slick
 #page-top {
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 20px;
   font-size: 20px;
   line-height: 1;
   z-index: 99;
+  
+  animation: up_down 4s infinite;
 }
 
 #page-top img {
@@ -147,31 +149,7 @@ slick
   opacity: .5;
 }
 
-.rotate {
-  animation: waving 4s; 
-}
 
-@keyframes waving {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  12.5% {
-    transform: rotate(0deg);
-  }
-
-  33% {
-    transform: rotate(5deg);
-  }
-
-  66% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 /*--------
 ハンバーガーボタン
@@ -326,7 +304,10 @@ main
   /* position: absolute; */
   height: 100vh;
   /* width: 100%; */
+  margin-bottom: 210px;
 }
+
+
 
 .mainvisual img{
   height: 100%;
@@ -336,15 +317,26 @@ main
   /* transform: scaleX(1.3); */
 }
 
-.main-menu {
-  display: none;
+.mainvisual_fade {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
 }
 
-.whale {
-  width: 250px;
+.mainvisual_fade img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* transform: scaleX(1.3); */
+}
+
+.main-menu {
   position: absolute;
-  top: 280px;
-  right: 30px;
+  top: 10px;
+  right: 100px;
+  z-index: 200;
+  color: #000;
 }
 
 .copy {
@@ -355,12 +347,30 @@ main
   color: #1D2088;
 }
 
-.under_arrow {
+.down_arrow {
   position: absolute;
-  top: 90vh;
+  top: 80vh;
   left: 50vw;
-  transform: translateX(-50%);
-  z-index: 60;
+  z-index: 100;
+  animation: up_down 4s infinite;
+  opacity: 0.7
+}
+
+.down_arrow img {
+  transform: translate(-50%, 0);
+}
+
+@keyframes up_down {
+  0% {
+    transform: translate(0,-25%);
+  }
+  50% {
+    transform: translate(0,25%);
+  }
+
+  100% {
+    transform: translate(0,-25%);
+  }
 }
 
 .slide {
@@ -381,7 +391,7 @@ main
 }
 
 .buttons_need_reserve {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 30px;
 }
@@ -465,7 +475,7 @@ footer
 ------ */
 
 #footer {
-  background: #1D2088;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding-top: 30px;
   padding-left: 30px;
@@ -496,23 +506,14 @@ footer
 
 @media (min-width: 768px) {
 
-  /* .main-menu {
-    display: block;
-    height: 100px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  } */
-
-  .whale {
-    width: 400px;
-    position: absolute;
-    top: 300px;
-    right: 100px;
+  .copy {
+    font-size: 2.7rem;
   }
 
+
+
   .buttons_need_reserve {
-    /* display: block; */
+    display: flex;
     box-sizing: border-box;
   }
 
@@ -585,8 +586,34 @@ footer
 
 @media (min-width: 1025px) {
   
+  /* .container {
+    overflow: hidden;
+  }
+
   .mainvisual img{
     transform: scale(1.3);
+  } */
+
+  .copy {
+    top: 300px;
+    left: 300px;
+    font-size: 4.0rem;
+  }
+
+  .mainvisual {
+    height: 120vh;
+  }
+
+  .mainvisual > img{
+    height: 120vh;
+  }
+
+  .mainvisual_fade {
+    height: 120vh;
+  }
+
+  .mainvisual_fade > img{
+    height: 120vh;
   }
   
   .in_water img {
@@ -609,6 +636,7 @@ footer
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    z-index: 30;
   }
 
   .slide {

@@ -20,25 +20,22 @@ $(function(){
   var pagetop = $('#page-top');
   pagetop.hide();
   $('.menu-btn').hide();
+  $('.mainvisual_fade').hide();
   $(window).scroll(function () {
      if ($(this).scrollTop() > 100) {
           pagetop.fadeIn();
           $('.menu-btn').fadeIn();
+          $('.mainvisual_fade').fadeIn();
           $('.under_arrow').fadeOut();
      } else {
           pagetop.fadeOut();
           $('.menu-btn').fadeOut();
+          $('.mainvisual_fade').fadeOut();
           $('.under_arrow').fadeIn();
      }
   });
   pagetop.click(function () {
      $('body, html').animate({ scrollTop: 0 }, 500);
-     if(window.innerWidth > 1024) {
-       $('.mainvisual').addClass('rotate').delay(4000).queue(function(next){
-      $(this).removeClass('rotate');
-      next();
-      });
-     }
   });
 
   // slick
