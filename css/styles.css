@@ -358,6 +358,7 @@ main
 
 .down_arrow img {
   transform: translate(-50%, 0);
+  height: 100px;
 }
 
 @keyframes up_down {
