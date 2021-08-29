@@ -6,7 +6,11 @@ $(function(){
         userAgent.indexOf('trident') != -1) {
           $('.sns-btn').hide();
           $('.calendar').hide();
-          $('.slide').css('width', '100%');
+          // $('.slide').css('width', '100%');
+          // if($(window).width > 768) {
+          //   $('.new_fishes_images')
+          // }
+          $('.new_fish:before, .new_fish:after').hide();
         }
 
 
