@@ -19,7 +19,6 @@ $(function(){
 
   var pagetop = $('#page-top');
   pagetop.hide();
-  $('.menu-btn').hide();
   $('.mainvisual_fade').hide();
   $(window).scroll(function () {
      if ($(this).scrollTop() > 100) {
@@ -29,7 +28,6 @@ $(function(){
           $('.under_arrow').fadeOut();
      } else {
           pagetop.fadeOut();
-          $('.menu-btn').fadeOut();
           $('.mainvisual_fade').fadeOut();
           $('.under_arrow').fadeIn();
      }

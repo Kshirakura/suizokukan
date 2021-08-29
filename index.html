@@ -18,160 +18,189 @@
     <meta property="og:image" content="https://kshirakura.github.io/suizokukan/img/mainvisual-ogp.png">
     <meta property="og:site_name" content="浦々水族館">
     <meta property="og:locale" content="ja_JP" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'lvo5bug',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
-    <div class="container">
-      <div class="in_water">
-        <img src="img/in_water.jpg" alt="in_water">
+    <div class="container_all">
+      <div class="background">
+        <img src="img/main-pc.png" alt="background">
       </div>
-      <div class="menu-modal">
-        <ul class="menu">
-          <li><a class="top-btn" href="#">TOP</a></li>
-          <li><a class="scroll-btn" href="#schedule">スケジュール</a></li>
-          <li><a class="scroll-btn" href="#event">イベント</a></li>
-          <li><a class="scroll-btn" href="#news">ニュース</a></li>
-          <li><a class="scroll-btn" href="#new_fish">新しい生き物</a></li>
-        </ul>
-      </div>
-      <div class="attention">
-        <p>＊音が出ます</p>
-        <button>OK</button>
-        <button>音を出さない</button>
-      </div>
-      <div class="mainvisual rellax">
-        <img src="img/mainvisual_whale.png" alt="mainvisual">
-      </div>
-      <div class="mainvisual_fade rellax">
-        <img src="img/mainvisual_tale.png" alt="mainvisual">
-      </div>
-      <header id="header">
-        <h1 class="site-title">
-          <img src="suizokukan_logo2.svg" alt="浦々水族館">
-        </h1>
-        <nav class="main-menu">
-          <ul>
-            <li><a class="scroll-btn" href="#schedule">スケジュール</a></li>
-            <li><a class="scroll-btn" href="#event">イベント</a></li>
-            <li><a class="scroll-btn" href="#news">ニュース</a></li>
-            <li><a class="scroll-btn" href="#new_fish">新しい生き物</a></li>
-          </ul>
-        </nav>
-        
-        <!-- ハンバーガーメニュー -->
-        <div class="hamburger-menu">
-          <input type="checkbox" id="menu-btn-check">
-          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <header class="header">
+        <div class="header_container container">
+          <h1 class="site-title">
+            <img src="suizokukan_logo2.svg" alt="浦々水族館">
+          </h1>
+          <!-- <nav class="main-menu">
+            <ul>
+              <li><a class="scroll-btn" href="#schedule">スケジュール</a></li>
+              <li><a class="scroll-btn" href="#event">イベント</a></li>
+              <li><a class="scroll-btn" href="#news">ニュース</a></li>
+              <li><a class="scroll-btn" href="#new_fish">新しい生き物</a></li>
+            </ul>
+          </nav> -->
+          
+          <!-- ハンバーガーメニュー -->
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check" value="false">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          </div>
         </div>
       </header>
+      <main class="main">
+        <div class="hero section">
+          <div class="hero_container">
+            <div class="menu-modal">
+              <ul class="menu">
+                <li><a class="top-btn" href="#">TOP</a></li>
+                <li><a class="scroll-btn" href="#schedule">スケジュール</a></li>
+                <li><a class="scroll-btn" href="#events">イベント</a></li>
+                <li><a class="scroll-btn" href="#news">ニュース</a></li>
+                <li><a class="scroll-btn" href="#new_fish">新しい生き物</a></li>
+                <li><a class="scroll-btn" href="#access">アクセス</a></li>
+              </ul>
+            </div>
+            <div class="whale">
+              <img src="img/whale.svg" alt="whale">
+            </div>
+            <div class="copy">
+              <h2><span class="span2"></span><span>クジラ</span>を、見に行こう。</h2>
+            </div>
+            
+            <div class="down_arrow">
+              <img src="down_arrow.svg" alt="下矢印">
+            </div>
+          </div>
+        </div>
+          <div class="slide_calendar section">
+          <div class="slide_calendar_container container">
+            <div class="slide">
+              <a href=""><img src="img/slide/slide1.jpg" alt="slide1"></a>
+              <a href=""><img src="img/slide/slide2.jpg" alt="slide1"></a>
+              <a href=""><img src="img/slide/slide3.jpg" alt="slide1"></a>
+              <a href=""><img src="img/slide/slide4.jpg" alt="slide1"></a>
+            </div>
+            <div class="calendar">
+              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=YWNjNW5uYmN2cm80aTRuZWcxaGlsczBqam9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%230B8043&showTitle=1&showNav=1&showCalendars=1&mode=AGENDA" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
 
-      <main>
-        <div class="copy rellax"  data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="-6">
-          <h2>クジラを、見に行こう。</h2>
-        </div>
-        
-        <div class="down_arrow">
-          <img src="down_arrow.svg" alt="下矢印">
-        </div>
-        
-        <div class="slide_calender">
-          <div class="slide">
-            <a href=""><img src="img/slide/slide1.jpg" alt="slide1"></a>
-            <a href=""><img src="img/slide/slide2.jpg" alt="slide1"></a>
-            <a href=""><img src="img/slide/slide3.jpg" alt="slide1"></a>
-            <a href=""><img src="img/slide/slide4.jpg" alt="slide1"></a>
-          </div>
-          <div class="calender">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=YWNjNW5uYmN2cm80aTRuZWcxaGlsczBqam9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%230B8043&showTitle=1&showNav=1&showCalendars=1&mode=AGENDA" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <div class="infomation section">
+          <div class="infomation_container container">
+            <div id="schedule" class="today_schedule">
+              <a href=""><span id="today"></span>のスケジュール</a>
+            </div>
+            
+            <div class="buttons_need_reserve">
+              <div class="buttons">
+                <span>予約</span>
+                </div>
+              <div class="need_reserve">
+                <h3>入場には予約が必要です</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div id="schedule" class="today_schedule wrapper">
-          <a href=""><span id="today"></span>のスケジュール</a>
-        </div>
-        
-        <div class="buttons_need_reserve wrapper">
-          <div class="buttons">
-            <button>クーポン発行</button>
-            <button>予約</button>
-          </div>
-          <div class="need_reserve">
-            <h3>入場には予約が必要です</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </div>
-        
-        <div id="event" class="events wraper">
-          <h3>イベント</h3>
+
+        <div class="events section" id="events">
+          <div class="events_container container">
+            <h1>イベント</h1>
           <div class="events_images">
-            <a href=""><img src="img/events/event1.jpg" alt="イベント1"><h4>巨大水槽オープン</h4></a>
-            <a href=""><img src="img/events/event2.jpg" alt="イベント2"><h4>サメがやってくる</h4></a>
-            <a href=""><img src="img/events/event3.jpg" alt="イベント3"><h4>小さい魚たち</h4></a>
-            <a href=""><img src="img/events/event4.jpg" alt="イベント4"><h4>金魚まつり</h4></a>
+            <a href=""><img src="img/events/event1.jpg" alt="イベント1"><h2>巨大水槽オープン</h2></a>
+            <a href=""><img src="img/events/event2.jpg" alt="イベント2"><h2>サメがやってくる</h2></a>
+            <a href=""><img src="img/events/event3.jpg" alt="イベント3"><h2>小さい魚たち</h2></a>
+            <a href=""><img src="img/events/event4.jpg" alt="イベント4"><h2>金魚まつり</h2></a>
+          </div>
           </div>
         </div>
-        
-        <div id="news" class="news">
-          <h3>ニュース</h3>
-          <dl>
-            <dt>2012.12.13</dt>
-            <dd><a href="">クリスマスイベント予告！</a></dd>
-            <dt>2012.11.13</dt>
-            <dd><a href="">冬！飼育員は寒いですが生き物たちは元気です</a></dd>
-            <dt>2012.10.13</dt>
-            <dd><a href="">新しいイルカがやってきました！</a></dd>
-            <dt>2012.9.13</dt>
-            <dd><a href="">秋が来る！海の紅葉狩り</a></dd>
-          </dl>
-          <a href="">すべて表示</a>
+
+        <div class="news section" id="news">
+          <div class="news_container container">
+            <h1>ニュース</h1>
+            <dl>
+              <dt>2012.12.13</dt>
+              <dd><a href="">クリスマスイベント予告！</a></dd>
+              <dt>2012.11.13</dt>
+              <dd><a href="">冬！飼育員は寒いですが生き物たちは元気です</a></dd>
+              <dt>2012.10.13</dt>
+              <dd><a href="">新しいイルカがやってきました！</a></dd>
+              <dt>2012.9.13</dt>
+              <dd><a href="">秋が来る！海の紅葉狩り</a></dd>
+            </dl>
+            <a href="">すべて表示</a>
+          </div>
         </div>
-        
-        <div id="new_fish" class="new_fishes">
-          <h3>新しい生き物</h3>
+
+        <div class="new_fish section" id="new_fish">
+          <div class="new_fish_container container">
+            <h1>新しい生き物</h1>
           <div class="new_fishes_images">
-            <a href=""><img src="img/fishes/fish1.jpg" alt="new_fishes1"><h4>クマノミ</h4></a>
-            <a href=""><img src="img/fishes/fish2.jpg" alt="new_fishes2"><h4>エンジェルフィッシュ</h4></a>
-            <a href=""><img src="img/fishes/fish3.jpg" alt="new_fishes3"><h4>サンゴ</h4></a>
-            <a href=""><img src="img/fishes/fish4.jpg" alt="new_fishes4"><h4>ウミガメ</h4></a>
-            <a href=""><img src="img/fishes/fish5.jpg" alt="new_fishes5"><h4>エイ</h4></a>
-            <a href=""><img src="img/fishes/fish6.jpg" alt="new_fishes6"><h4>熱帯魚たち</h4></a>
-            <a href=""><img src="img/fishes/fish7.jpg" alt="new_fishes7"><h4>熱帯魚たち２</h4></a>
-            <a href=""><img src="img/fishes/fish8.jpg" alt="new_fishes8"><h4>タツノオトシゴ</h4></a>
+            <a href=""><img src="img/fishes/fish1.jpg" alt="new_fishes1"><h2>クマノミ</h2></a>
+            <a href=""><img src="img/fishes/fish2.jpg" alt="new_fishes2"><h2>エンジェルフィッシュ</h2></a>
+            <a href=""><img src="img/fishes/fish3.jpg" alt="new_fishes3"><h2>サンゴ</h2></a>
+            <a href=""><img src="img/fishes/fish4.jpg" alt="new_fishes4"><h2>ウミガメ</h2></a>
+            <a href=""><img src="img/fishes/fish5.jpg" alt="new_fishes5"><h2>エイ</h2></a>
+            <a href=""><img src="img/fishes/fish6.jpg" alt="new_fishes6"><h2>熱帯魚たち</h2></a>
+            <a href=""><img src="img/fishes/fish7.jpg" alt="new_fishes7"><h2>熱帯魚たち２</h2></a>
+            <a href=""><img src="img/fishes/fish8.jpg" alt="new_fishes8"><h2>タツノオトシゴ</h2></a>
+          </div>
           </div>
         </div>
+        
+        <div class="access section" id="access">
+          <div class="access_container container">
+            <h1>アクセス</h1>
+            <div class="media_container">
+              <div class="access_image">
+              <img src="img/access.png" alt="access_image">
+            </div>
+            <div class="text">
+              <p>〇〇線 〇〇駅から徒歩○分</p>
+              <p>〇〇線 〇〇駅から徒歩○分</p>
+              <p>〇〇線 〇〇駅から徒歩○分</p>
+              <p>〇〇線 〇〇駅から徒歩○分</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      <!-- シェアボタン -->
+        <div class="flex-items sns-btn">
+          <div class="fb-share-button" data-href="https://kshirakura.github.io/BooksChange/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkshirakura.github.io%2FBooksChange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+          <a data-size="large" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+        </div>
+        <!-- シェアボタン -->
+        
+        <!-- TOPボタン -->
+        <p id="page-top"><a href="#"><img src="up_arrow.svg" alt="to-top"></a></p>
       </main>
-      <!-- シェアボタン -->
-      <div class="flex-items sns-btn">
-        <div class="fb-share-button" data-href="https://kshirakura.github.io/BooksChange/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkshirakura.github.io%2FBooksChange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
-        <a data-size="large" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
-      </div>
+        <footer class="footer">
+          <div class=footer_container>
+            <ul>
+              <li><a href="">よくあるご質問</a></li>
+              <li><a href="">営業時間10:00~17:00</a></li>
+              <li><a href="">スタッフ募集</a></li>
+              <li><a href="">お問い合せ</a></li>
+            </ul>
+            <p>&copy;浦々水族館 designed by freepik.com</p>
+          </div>
+      </footer>
     </div>
-      
-
-
-      <!-- シェアボタン -->
-
-    <!-- TOPボタン -->
-    <p id="page-top"><a href="#"><img src="up_arrow.svg" alt="to-top"></a></p>
-    <!-- TOPボタン -->
-
-    <footer id="footer">
-      <div class="flex-items">
-        <ul>
-          <li><a href="">よくあるご質問</a></li>
-          <li><a href="">営業時間10:00~17:00</a></li>
-          <li><a href="">スタッフ募集</a></li>
-          <li><a href="">お問い合せ</a></li>
-        </ul>
-      </div>
-      <p>&copy;浦々水族館</p>
-    </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v11.0" nonce="ETaQp8uF"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
   </body>
 </html>
