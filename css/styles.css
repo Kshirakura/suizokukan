@@ -580,6 +580,7 @@ main
 }
 
 .new_fish::before {
+  display: block;
   content: '';
   background: url('../img/wave.svg') repeat-x center;
   background-size: 200px;
@@ -589,6 +590,7 @@ main
   top: -29px;
 }
 .new_fish::after {
+  display: block;
   content: '';
   background: url('../img/wave.svg') repeat-x center;
   background-size: 200px;
