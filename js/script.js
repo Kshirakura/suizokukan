@@ -5,7 +5,7 @@ $(function(){
   if(userAgent.indexOf('msie') != -1 ||
         userAgent.indexOf('trident') != -1) {
           $('.sns-btn').hide();
-          $('.calender').hide();
+          $('.calendar').hide();
           $('.slide').css('width', '100%');
         }
 
