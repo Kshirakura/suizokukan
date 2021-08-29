@@ -601,6 +601,12 @@ main
   transform: rotate(180deg);
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .new_fish::after, .new_fish::before {
+    display: none;
+  }
+}
+
 @keyframes wave {
   0% {
     transform: translateX(-100%);
