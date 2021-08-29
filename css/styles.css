@@ -579,7 +579,7 @@ main
   /* position: relative */
 }
 
-.new_fish:before {
+.new_fish::before {
   content: '';
   background: url('../img/wave.svg') repeat-x center;
   background-size: 200px;
@@ -588,7 +588,7 @@ main
   height: 40px;
   top: -29px;
 }
-.new_fish:after {
+.new_fish::after {
   content: '';
   background: url('../img/wave.svg') repeat-x center;
   background-size: 200px;

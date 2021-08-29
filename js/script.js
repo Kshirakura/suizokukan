@@ -10,8 +10,8 @@ $(function(){
           // if($(window).width > 768) {
           //   $('.new_fishes_images')
           // }
-          $('.new_fish:before').hide();
-          $('.new_fish:after').hide();
+          $('.new_fish::before').hide();
+          $('.new_fish::after').hide();
         }
 
 
