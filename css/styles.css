@@ -461,13 +461,13 @@ main
   display: block;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   /* border: solid 1px #fff; */
   border-radius: 3px;
   /* background: #ffd700; */
   background: #add8e6;
-  width: 200px;
-  font-size: 3rem;
+  width: 120px;
+  font-size: 2.4rem;
 }
 
 .buttons div:hover {
@@ -491,9 +491,9 @@ main
 .events_container h1 {
   color: #fff;
   background: #ff8811;
-  width: 60%;
+  width: 50%;
   margin: -40px auto 30px ;
-  padding: 15px;
+  /* padding: 10px; */
   border-radius: 40px;
 }
 
