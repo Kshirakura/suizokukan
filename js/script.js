@@ -7,11 +7,6 @@ $(function(){
           $('.sns-btn').hide();
           $('.calendar').hide();
           $('.slide').css('width', '100%');
-          // if($(window).width > 768) {
-          //   $('.new_fishes_images')
-          // }
-          $('.new_fish::before').css('width', '0%');
-          $('.new_fish::after').css('width', '0%');
         }
 
 
